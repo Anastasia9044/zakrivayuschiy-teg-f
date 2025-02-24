@@ -9,3 +9,82 @@
 ✦ button__text — для обозначения текстового элемента внутри кнопки
 
 */
+
+@keyframes heartbeat {
+  0% {
+    scale: 1;
+  }
+  100% {
+    scale: 1.25;
+  }
+}
+
+@keyframes heart-sparks {
+  0% {
+    fill: transparent;
+  }
+  100% {
+    fill: var(--like-color);
+  }
+}
+
+.core,
+.main-body,
+.sparks {
+  fill: transparent;
+}
+
+.core {
+  transition: fill linear var(--animation-time) 0.03s;
+}
+
+.main-body {
+  transition: fill linear var(--animation-time);
+}
+
+.contour {
+  transition: fill linear 0.1s;
+}
+
+.card__icon-button:hover .core {
+  fill: var(--decor-color);
+  transition: fill linear var(--animation-time);
+}
+
+.card__icon-button:hover .main-body {
+  fill: var(--decor-color);
+  transition: fill linear var(--animation-time) 0.05s;
+}
+
+.card__icon-button:active .core {
+  fill: var(--like-color);
+  transition: fill linear var(--animation-time) 0.05s;
+}
+
+.card__icon-button:active .main-body {
+  fill: var(--like-color);
+  transition: fill linear var(--animation-time) 0.05s;
+}
+
+.like-icon.is-liked {
+  animation: 1 ease-in var(--animation-time) 0.1s alternate heartbeat;
+}
+
+.like-icon.is-liked .main-body {
+  fill: var(--like-color);
+  transition: fill linear var(--animation-time) 0.05s;
+}
+
+.like-icon.is-liked .core {
+  fill: var(--like-color);
+  transition: fill linear var(--animation-time);
+}
+
+.like-icon.is-liked .sparks {
+  animation: 1 ease-in var(--animation-time) var(--animation-time) heart-sparks;
+}
+
+.like-icon.is-liked .contour {
+  fill: var(--like-color);
+  transition: fill linear var(--animation-time) 0.06s;
+}
