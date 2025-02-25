@@ -10,7 +10,7 @@
 
 */
 
-@keyframes heartbeat {
+@keyframes increase {
   0% {
     scale: 1;
   }
@@ -19,7 +19,7 @@
   }
 }
 
-@keyframes heart-sparks {
+@keyframes coloring {
   0% {
     fill: transparent;
   }
@@ -58,7 +58,6 @@
 
 .card__icon-button:active .core {
   fill: var(--like-color);
-  transition: fill linear var(--animation-time) 0.05s;
 }
 
 .card__icon-button:active .main-body {
@@ -67,7 +66,7 @@
 }
 
 .like-icon.is-liked {
-  animation: 1 ease-in var(--animation-time) 0.1s alternate heartbeat;
+  animation: 1 ease-in var(--animation-time) 0.1s alternate increase;
 }
 
 .like-icon.is-liked .main-body {
@@ -81,7 +80,7 @@
 }
 
 .like-icon.is-liked .sparks {
-  animation: 1 ease-in var(--animation-time) var(--animation-time) heart-sparks;
+  animation: 1 ease-in var(--animation-time) var(--animation-time) coloring;
 }
 
 .like-icon.is-liked .contour {

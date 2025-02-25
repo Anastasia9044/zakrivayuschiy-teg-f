@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Закрывающий тег</title>
     <link rel="icon" href="./svg/favicons/favicon.svg" type="image/svg+xml" />
+    <link
+      rel="apple-touch-icon"
+      href="./images/favicon apple.png"
+      sizes="180x180"
+    />
     <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./styles/variables.css" />
     <link rel="stylesheet" href="./styles/globals.css" />
@@ -13,10 +18,8 @@
   </head>
   <body class="page">
     <header class="header">
-      <div class="title__container">
-        <a class="header__title">&lt;/html&gt;</a>
-        <h1 class="header__subtitle">закрывающий тег</h1>
-      </div>
+      <a class="header__logo">&lt;/html&gt;</a>
+      <h1 class="header__subtitle">закрывающий тег</h1>
     </header>
     <main>
       <section class="card__section">
@@ -33,7 +36,9 @@
                   alt="Монитор на столе, на экране надпись Do more"
                   loading="lazy"
                 />
-                <span class="card__image-label">&lt;meeting&gt;</span>
+                <span class="card__image-label" aria-hidden="true"
+                  >&lt;meeting&gt;</span
+                >
               </div>
               <div class="card__desctiption">
                 <div class="card__text-container">
@@ -84,7 +89,10 @@
                     </svg>
                   </button>
 
-                  <button type="button" class="button card__like-button">
+                  <button
+                    type="button"
+                    class="button card__like-button button-active"
+                  >
                     <span class="button__text">Like</span>
                   </button>
                 </div>
@@ -102,7 +110,9 @@
                   alt="На столе стоит ноутбук, рядом домашнее растение и бутылка"
                   loading="lazy"
                 />
-                <span class="card__image-label">&lt;ready&gt;</span>
+                <span class="card__image-label" aria-hidden="true"
+                  >&lt;ready&gt;</span
+                >
               </div>
               <div class="card__desctiption">
                 <div class="card__text-container">
@@ -156,7 +166,10 @@
                     </svg>
                   </button>
 
-                  <button type="button" class="button card__like-button">
+                  <button
+                    type="button"
+                    class="button card__like-button button-active"
+                  >
                     <span class="button__text">Like</span>
                   </button>
                 </div>
@@ -174,7 +187,9 @@
                   alt="За столом сидит команда программистов с ноутбуками, наушниками, ежедневниками и другими принадлежностями"
                   loading="lazy"
                 />
-                <span class="card__image-label">&lt;team&gt;</span>
+                <span class="card__image-label" aria-hidden="true"
+                  >&lt;team&gt;</span
+                >
               </div>
               <div class="card__desctiption">
                 <div class="card__text-container">
@@ -226,7 +241,10 @@
                       />
                     </svg>
                   </button>
-                  <button type="button" class="button card__like-button">
+                  <button
+                    type="button"
+                    class="button card__like-button button-active"
+                  >
                     <span class="button__text">Like</span>
                   </button>
                 </div>
@@ -244,7 +262,9 @@
                   alt="Девушка в уединенной обстановке сидит за столом с ноутбуком и пьет кофе"
                   loading="lazy"
                 />
-                <span class="card__image-label">&lt;privacy&gt;</span>
+                <span class="card__image-label" aria-hidden="true"
+                  >&lt;privacy&gt;</span
+                >
               </div>
               <div class="card__desctiption">
                 <div class="card__text-container">
@@ -298,7 +318,10 @@
                     </svg>
                   </button>
 
-                  <button type="button" class="button card__like-button">
+                  <button
+                    type="button"
+                    class="button card__like-button button-active"
+                  >
                     <span class="button__text">Like</span>
                   </button>
                 </div>
@@ -316,7 +339,9 @@
                   alt="Пушистый рыжий кот лежит на лежанке, вытянув лапы вперед"
                   loading="lazy"
                 />
-                <span class="card__image-label">relax</span>
+                <span class="card__image-label" aria-hidden="true"
+                  >&lt;relax&gt;</span
+                >
               </div>
               <div class="card__desctiption">
                 <div class="card__text-container">
@@ -369,7 +394,10 @@
                     </svg>
                   </button>
 
-                  <button type="button" class="button card__like-button">
+                  <button
+                    type="button"
+                    class="button card__like-button button-active"
+                  >
                     <span class="button__text">Like</span>
                   </button>
                 </div>
@@ -386,7 +414,9 @@
                   alt="Человек указывает на что-то на экране ноутбука для того, чтобы что-то объяснить своему собеседнику"
                   loading="lazy"
                 />
-                <span class="card__image-label">&lt;support&gt;</span>
+                <span class="card__image-label" aria-hidden="true"
+                  >&lt;support&gt;</span
+                >
               </div>
               <div class="card__desctiption">
                 <div class="card__text-container">
@@ -438,7 +468,10 @@
                     </svg>
                   </button>
 
-                  <button type="button" class="button card__like-button">
+                  <button
+                    type="button"
+                    class="button card__like-button button-active"
+                  >
                     <span class="button__text">Like</span>
                   </button>
                 </div>
@@ -452,11 +485,13 @@
               <div class="card__image-container">
                 <img
                   class="card__image filter__blur"
-                  src="./images/david-boca.png"
+                  src="./images/sincerely-media.png"
                   alt="Чашка крепкого кофе стоит рядом с ноутбуком, фото заблюрено"
                   loading="lazy"
                 />
-                <span class="card__image-label">&lt;cheerfulness&gt;</span>
+                <span class="card__image-label" aria-hidden="true"
+                  >&lt;cheerfulness&gt;</span
+                >
               </div>
               <div class="card__desctiption">
                 <div class="card__text-container">
@@ -509,7 +544,10 @@
                     </svg>
                   </button>
 
-                  <button type="button" class="button card__like-button">
+                  <button
+                    type="button"
+                    class="button card__like-button button-active"
+                  >
                     <span class="button__text">Like</span>
                   </button>
                 </div>
@@ -523,11 +561,13 @@
               <div class="card__image-container">
                 <img
                   class="card__image filter_hue-rotate-contrast"
-                  src="./images/zac-durant.png"
+                  src="./images/benjamin-davies.png"
                   alt="Мужчина стоит у обрыва на закате, вытянув руки по обе стороны"
                   loading="lazy"
                 />
-                <span class="card__image-label">&lt;success&gt;</span>
+                <span class="card__image-label" aria-hidden="true"
+                  >&lt;success&gt;</span
+                >
               </div>
               <div class="card__desctiption">
                 <div class="card__text-container">
@@ -583,7 +623,10 @@
                     </svg>
                   </button>
 
-                  <button type="button" class="button card__like-button">
+                  <button
+                    type="button"
+                    class="button card__like-button button-active"
+                  >
                     <span class="button__text">Like</span>
                   </button>
                 </div>
@@ -591,10 +634,9 @@
             </article>
           </li>
         </ul>
-
         <button
           type="button"
-          class="button save__button"
+          class="button save__button button-active"
           onclick="window['dialog-id'].showModal();"
           aria-controls="dialog-id"
         >
@@ -617,7 +659,7 @@
           </div>
           <button
             type="button"
-            class="dialog__window-button"
+            class="button dialog__window-button"
             onclick="window['dialog-id'].close()"
           >
             Ок
