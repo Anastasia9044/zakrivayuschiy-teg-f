@@ -32,7 +32,6 @@
   margin-inline: auto;
   padding-inline: clamp(0.875rem, 9.953vw - 1.458rem, 7.5rem);
   padding-block: clamp(7.5rem, 0.751vw + 7.324rem, 8rem);
-  border: 2px solid var(--decor-color);
   display: flex;
   gap: 20px;
   flex-direction: column;
