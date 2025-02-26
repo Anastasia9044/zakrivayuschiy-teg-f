@@ -190,18 +190,15 @@
   font-size: var(--decor-text-size);
   background-color: var(--bg-color);
   outline: none;
+  transition: box-shadow 0.3s ease;
+  color: var(--bg-color);
 }
 
 .button:hover {
   cursor: pointer;
 }
 
-.button-active {
-  transition: box-shadow 0.3s ease;
-  color: var(--bg-color);
-}
-
-.button-active::before {
+.button::before {
   content: "";
   position: absolute;
   top: 0;
@@ -214,15 +211,15 @@
   transition: transform 0.5s ease-in-out;
 }
 
-.button-active:hover::before {
+.button:hover::before {
   transform: scaleX(1);
 }
 
-.button-active:focus {
+.button:focus {
   outline: none;
 }
 
-.button-active:focus-visible {
+.button:focus-visible {
   box-shadow: 2px 2px var(--decor-color);
 }
 
@@ -237,7 +234,6 @@
   gap: 8px;
   min-width: 339px;
   min-height: 55px;
-  background-color: var(--bg-color);
   justify-content: center;
   align-items: center;
 }
@@ -255,10 +251,7 @@
 }
 
 .dialog__window {
-  padding-top: 31.5px;
-  padding-left: 31.5px;
-  padding-right: 32.5px;
-  padding-bottom: 30.5px;
+  padding: 30px;
 }
 
 .dialog__window-items {
@@ -266,10 +259,10 @@
   gap: 20px;
   align-items: center;
   margin-block-end: 30px;
+  max-width: 293px;
 }
 
 .dialog__text {
-  max-width: 235px;
   font-family: var(--decor-text), serif;
   font-size: var(--decor-text-size);
   line-height: 150%;
@@ -280,7 +273,7 @@
   padding-block: 12px;
   padding-inline: 132px;
   text-transform: uppercase;
-  width: clamp(16.063rem, 15.27rem + 3.38vw, 18.313rem);
+  width: 100%;
 }
 
 dialog::backdrop {
@@ -320,7 +313,7 @@ dialog::backdrop {
   filter: hue-rotate(10deg) contrast(160%);
 }
 
-@media (width <= 375px) {
+@media (width < 376px) {
   .header__subtitle {
     width: max-content;
   }
@@ -331,7 +324,12 @@ dialog::backdrop {
 
   .dialog__window {
     padding-block: 32px;
-    padding-inline: 42px;
+    padding-inline: 40px;
+    max-width: 341px;
+  }
+
+  .dialog__window-items {
+    min-width: 257px;
   }
 
   .dialog__window-button {

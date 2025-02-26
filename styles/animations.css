@@ -10,7 +10,7 @@
 
 */
 
-@keyframes increase {
+@keyframes increaseInHeartSize {
   0% {
     scale: 1;
   }
@@ -19,7 +19,7 @@
   }
 }
 
-@keyframes coloring {
+@keyframes appearanceOfSparks {
   0% {
     fill: transparent;
   }
@@ -58,6 +58,7 @@
 
 .card__icon-button:active .core {
   fill: var(--like-color);
+  transition: fill linear var(--animation-time);
 }
 
 .card__icon-button:active .main-body {
@@ -66,7 +67,7 @@
 }
 
 .like-icon.is-liked {
-  animation: 1 ease-in var(--animation-time) 0.1s alternate increase;
+  animation: 1 ease-in var(--animation-time) 0.1s alternate IncreaseInHeartSize;
 }
 
 .like-icon.is-liked .main-body {
@@ -80,7 +81,7 @@
 }
 
 .like-icon.is-liked .sparks {
-  animation: 1 ease-in var(--animation-time) var(--animation-time) coloring;
+  animation: 1 ease-in var(--animation-time) var(--animation-time) appearanceOfSparks;
 }
 
 .like-icon.is-liked .contour {
