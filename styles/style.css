@@ -184,7 +184,7 @@
 
 .button {
   position: relative;
-  color: var(--main-text-color);
+  color: var(--bg-color);
   border: 2px solid var(--decor-color);
   font-family: var(--decor-text), serif;
   font-size: var(--decor-text-size);
@@ -269,8 +269,7 @@
 }
 
 .dialog__window-button {
-  padding-block: 12px;
-  padding-inline: 132px;
+  padding: 10px 17px;
   text-transform: uppercase;
   width: 100%;
 }
@@ -335,7 +334,6 @@ dialog::backdrop {
     margin-block: 0;
     margin-inline: auto;
     display: block;
-    padding-block: 12.5px;
     padding-inline: 114.5px;
   }
 
